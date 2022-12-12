@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="25dp"
+    android:background="@color/cardview_dark_background"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/textGreetings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="С возвращением, Эмиль!" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Каким ты себя ощущаешь сегодня?"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/feelings_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginVertical="8dp"
+        android:orientation="horizontal"
+        tools:listitem="@layout/list_item" />
+
+    <include layout="@layout/card_item" />
+    <include layout="@layout/card_item" />
+
+</LinearLayout>
